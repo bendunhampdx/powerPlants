@@ -1,0 +1,9 @@
+.gridContainer {
+  display:grid;
+  grid-template-areas:
+    'main main main';
+  grid-gap: 20px;
+}
+#giraffeFriend {
+  display: none;
+}

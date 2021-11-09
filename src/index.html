@@ -1,11 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<html>
+  <head>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <title>Grow Your Plant</title>
+  </head>
+  <body>
+    <div class="gridContainer">
+      <div class="gridItem">
+        <h1>Your Plant's Values</h1>
+        <button class="btn-success" id="feed">Add fertilizer</button>
+        <button class="btn-success" id="hydrate">Add water</button>
+        <button class="btn-success" id="light">Add light</button>
+        <button class="btn-success" id="cleanliness">Wash the Giraffe</button>
+        <button class="btn-success" id="show-state">Current Stats</button>
+        <h3><div id="cleanliness-value"></div></h3>
+        <div id="giraffeFriend"><img src="./img/giraffe.jpeg"/></div>
+      </div>
+      <div class="gridItem">
+    
+      </div>
+      <div class="gridItem">
+        <div class="grow-buttons">
+          <h3><div id="fert-value">0</div></h3>
+          <h3><div id="water-value">0</div></h3>
+          <h3><div id="light-value">0</div></h3>
+          
+
+        </div>
+      </div>
+
+
+    </div>
+  </body>
 </html>

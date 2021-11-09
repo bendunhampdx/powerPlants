@@ -7,8 +7,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: "/repo-name-here/"
+    path: path.resolve(__dirname, 'dist/'),
+    // publicPath: "/repo-name-here/"
   },
   devtool: 'eval-source-map',
   devServer: {               
@@ -17,7 +17,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'Power Plant',
       template: './src/index.html',
       inject: 'body',
     }),
@@ -32,7 +32,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'assets/images/'
+              outputPath: 'img/'
             }
           }
         ]
