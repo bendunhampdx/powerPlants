@@ -8,31 +8,34 @@
     <title>Grow Your Plant</title>
   </head>
   <body>
-    <div class="gridContainer">
-      <div class="gridItem">
-        <h1>Your Plant's Values</h1>
-        <button class="btn-success" id="feed">Add fertilizer</button>
-        <button class="btn-success" id="hydrate">Add water</button>
-        <button class="btn-success" id="light">Add light</button>
-        <button class="btn-success" id="cleanliness">Wash the Giraffe</button>
-        <button class="btn-success" id="show-state">Current Stats</button>
-        <h3><div id="cleanliness-value"></div></h3>
-        <div id="giraffeFriend"><img src="./img/giraffe.jpeg"/></div>
-      </div>
-      <div class="gridItem">
-    
-      </div>
-      <div class="gridItem">
-        <div class="grow-buttons">
-          <h3><div id="fert-value">0</div></h3>
-          <h3><div id="water-value">0</div></h3>
-          <h3><div id="light-value">0</div></h3>
-          
-
+    <div class="container">
+      <div class="gridContainer">
+        <div class="gridItem">
+          <h1>Tend your Plant</h1>
+          <button class="btn-success" id="feed">Add fertilizer</button>
+          <button class="btn-success" id="hydrate">Add water</button>
+          <button class="btn-success" id="light">Add light</button>
+          <button class="btn-success" id="cleanliness">Wash the Giraffe</button>
+          <h3><div class="values" id="cleanliness-value"></div></h3>
+          <div id="giraffeFriend"><img src="./img/giraffe.jpeg" width="400px" /></div>
         </div>
+        <div class="gridItem">
+      
+        </div>
+        <div class="gridItem">
+          <h3>How's My Plant?</h3>
+          <button class="btn-success" id="show-state">Show Stats</button>
+          <div class="grow-buttons">
+            <h3><div class="values" id="fert-value"></div></h3>
+            <h3><div class="values" id="water-value"></div></h3>
+            <h3><div class="values" id="light-value"></div></h3>
+            
+
+          </div>
+        </div>
+
+
       </div>
-
-
     </div>
   </body>
 </html>

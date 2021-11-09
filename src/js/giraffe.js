@@ -1,4 +1,3 @@
 import * as State from "./state.js";
 
-export const giraffeWasher = State.changeState("cleanliness")(3);
-
+export const giraffeWasher = State.changeStateG("cleanliness")("clean ");

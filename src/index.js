@@ -19,7 +19,7 @@ $(document).ready(function() {
 
   $('#light').click(function() {
     const newState = State.stateControl(Plant.growLight);
-    $('#light-value').text(`Nice Bright Happiness: ${newState.light}`);
+    $('#light-value').text(`Happy Brightness: ${newState.light}`);
   });
 
   $('#cleanliness').click(function() {
@@ -27,7 +27,6 @@ $(document).ready(function() {
     $('#cleanliness-value').text(`How Clean is the Giraffe? ${newState.cleanliness}`);
     $('#giraffeFriend').show();
   });
-
 
   $('#show-state').click(function() {
     const currentState = State.stateControl();

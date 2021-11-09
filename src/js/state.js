@@ -21,3 +21,19 @@ export const changeState = (prop) => {
     });
   };
 };
+
+export const changeStateG = (prop) => {
+  return (value) => {
+    return (state) => ({
+      ...state,
+      [prop] : (state[prop] || "") + value
+    });
+  };
+};
+
+export const reset = (prop) => {
+  return (state) => ({
+    ...state,
+    [prop]: 0
+  });
+}
